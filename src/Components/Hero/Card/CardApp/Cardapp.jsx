@@ -7,8 +7,6 @@ import {
   Stack,
   Heading,
   Text,
-  ButtonGroup,
-  Button,
   useDisclosure,
 } from "@chakra-ui/react";
 import PropTypes from "prop-types";
@@ -53,11 +51,6 @@ const Cardapp = ({ cards }) => {
                     SAR {card.price}
                   </Text>
                 </Stack>
-                {/* <ButtonGroup mt="3" spacing="3">
-                    <Button size="sm" variant="solid" colorScheme="green">
-                      Buy now
-                    </Button>
-                  </ButtonGroup> */}
               </CardBody>
             </Card>
           ))}

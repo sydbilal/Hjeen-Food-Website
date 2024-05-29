@@ -38,22 +38,19 @@
 
 .cartIconContainer {
   position: relative;
-  display: inline-block;
-  padding-right: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .cartCount {
   position: absolute;
-  top: -20px;
-  right: -20px;
+  top: -10px; 
+  right: -10px; 
   background-color: rgb(46, 46, 46);
   color: white;
-  border-radius: 80%;
-  padding: 6px 4px;
+  border-radius: 50%;
+  padding: 4px 6px; 
   font-size: 12px;
-  padding-right: 15px;
-  margin-right: 25px;
-  margin-top: 5px;
 }
 
 body {

@@ -1,4 +1,3 @@
-// ITEMS.JSX
 import { useDispatch, useSelector } from "react-redux";
 import styles from "./Items.module.css"
 import { increaseQuantity, decreaseQuantity, removeItemIfQuantityIsOne } from "../../../Redux/CartSlice";

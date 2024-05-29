@@ -2,7 +2,6 @@ import { useSelector } from "react-redux";
 import { useState } from 'react';
 import styles from "./PaymentSection.module.css";
 import UserDetails from "../../Login/UserDetails";
-// import UserDetails from './UserDetails'; 
 
 
 
@@ -10,7 +9,7 @@ const PaymentSection = () => {
 
   const [isUserDetailsOpen, setIsUserDetailsOpen] = useState(false);
   const handleLoginToCheckout = () => {
-    setIsUserDetailsOpen(true); // Open UserDetails modal
+    setIsUserDetailsOpen(true); 
   };
   
   const { cart, totalPrice } = useSelector((state) => state.cart);

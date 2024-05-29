@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <img src="/images/spot.hjeen.svg" alt="Logo" />
+        <Link to="/"><img src="/images/spot.hjeen.svg" alt="Logo" /></Link>
       </div>
       <div className={styles.icons}>
         <NavLink to="/cart">

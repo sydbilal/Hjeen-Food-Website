@@ -43,7 +43,6 @@ const CardDetails = ({ product, isOpen, onClose }) => {
           <Button colorScheme="blue" mr={3} onClick={handleAddToCart}>
             + Add to cart
           </Button>
-          {/* <Button variant="ghost" onClick={onClose}>Close</Button> */}
         </ModalFooter>
       </ModalContent>
     </Modal>
