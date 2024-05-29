@@ -1,0 +1,31 @@
+.branchselector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 100%;
+  max-width: 200vh;
+  margin: 0 auto; /* Center horizontally */
+}
+
+.Branchbutton {
+  margin-top: 10px;
+  width: 100%; /* Ensure it takes the full width of the parent container */
+  max-width: 100%; /* Avoid overflow */
+  height: 50px;
+  background-color: rgba(228, 228, 228, 0.5);
+  border-radius: 20px;
+  cursor: pointer;
+  border: none; /* Remove default border */
+  text-align: center; /* Center text */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color as needed */
+  padding: 10px 20px; /* Add some padding */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.branchlist {
+  width: 100%; /* Ensure the list takes the full width of the parent container */
+  max-width: 100%; /* Avoid overflow */
+}

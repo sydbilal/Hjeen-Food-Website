@@ -1,0 +1,16 @@
+.welcometext{
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.Hero{
+  background-color: rgb(245, 245, 245);
+}
+
+.Headings h1{
+    padding-left: 40px;
+    padding-top: 40px;
+    font-weight: 700;
+    color: rgb(25, 25, 121);
+}

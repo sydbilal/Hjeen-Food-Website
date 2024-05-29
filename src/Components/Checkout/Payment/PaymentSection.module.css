@@ -1,0 +1,53 @@
+/* Wrapper to center the PaymentSection */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+  }
+  
+  /* Paymentsection styles */
+  .Paymentsection {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200vh; /* Adjust width as needed */
+  }
+  
+  /* Common styles for row items */
+  .Paymentsection > div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  /* Individual sections */
+  .Subtotal,
+  .Totalvat,
+  .total {
+    background-color: transparent; /* Remove background color */
+
+    border-radius: 20px;
+    padding: 10px 20px;
+  }
+  
+  /* Checkout button styles */
+  .checkoutbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .checkoutbutton button {
+    background-color: rgba(238, 194, 0, 0.6);
+    cursor: pointer;
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

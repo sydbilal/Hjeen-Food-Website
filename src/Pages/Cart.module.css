@@ -1,0 +1,57 @@
+.cart{
+    background-color: rgb(245, 245, 245);
+
+}
+
+.main {
+    padding-top: 40px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the flex items horizontally */
+    position: relative; /* To use absolute positioning for the back arrow */
+    width: 100%; /* Ensure it takes the full width */
+  }
+  
+  .backarrow {
+    font-size: 24px; /* Adjust the size of the back arrow if necessary */
+    cursor: pointer;
+    position: absolute; /* Position it absolutely */
+    left: 50px; /* Place it on the left side */
+    color: rgb(25, 25, 121);
+  }
+  
+  .checkoutheading {
+    color: rgb(25, 25, 121);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0 auto; /* Center the heading */
+  }
+
+  .selectbranch{
+    left: 50px; /* Place it on the left side */
+    padding-left: 50px;
+    padding-top: 40px;
+    /* position: absolute; */
+    background-color: none;
+
+  }
+  
+  .payment{
+    left: 50px; /* Place it on the left side */
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* position: absolute; */
+    background-color: none;
+
+  }
+
+  .item{
+    left: 50px; /* Place it on the left side */
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    /* position: absolute; */
+    background-color: none;
+  }
