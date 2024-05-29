@@ -1,4 +1,3 @@
-//CARDAPP.JSX
 import { useState } from "react";
 import {
   Card,
@@ -26,34 +25,35 @@ const Cardapp = ({ cards }) => {
   return (
     <div className={styles.App}>
       <div className={styles.cards}>
-          {cards.map((card) => (
-            <Card
-              key={card.id}
-              maxW="xs"
-              variant="filled"
-              align="center"
-              onClick={() => handleCardClick(card)}
-              cursor="pointer"
-              bgColor={"white"}
-            >
-              <CardBody>
+        {cards.map((card) => (
+          <Card
+            key={card.id}
+            maxW="xs"
+            variant="filled"
+            align="center"
+            onClick={() => handleCardClick(card)}
+            cursor="pointer"
+            bgColor={"white"}
+            borderRadius="30px"
+          >
+            <CardBody className={styles.cardBody}>
+              <div className={styles.cardImageContainer}>
                 <Image
-                  w="150px"
-                  h="auto"
+                  className={styles.cardImage}
                   src={card.imgsrc}
                   alt={card.imgalt}
-                  borderRadius="lg"
                 />
-                <Stack mt="2" spacing="1">
-                  <Heading size="md">{card.title}</Heading>
-                  <Text>{card.description}</Text>
-                  <Text color="blue.600" fontSize="xl">
-                    SAR {card.price}
-                  </Text>
-                </Stack>
-              </CardBody>
-            </Card>
-          ))}
+              </div>
+              <Stack mt="2" spacing="1" className={styles.cardContent}>
+                <Heading size="md">{card.title}</Heading>
+                <Text>{card.description}</Text>
+                <Text fontSize="xl">
+                  SAR {card.price}
+                </Text>
+              </Stack>
+            </CardBody>
+          </Card>
+        ))}
       </div>
 
       {selectedCard && (

@@ -15,8 +15,9 @@ const Checkbox = () => {
           type="checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
+          className={styles.checkboxtext}
         />
-        ..Deliver it to your Car?
+          Deliver it to your Car?
       </label>
       {isChecked && (
         <textarea

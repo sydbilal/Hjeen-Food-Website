@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
+import {faBagShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
 import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
 import UserDetails from "../Login/UserDetails";
@@ -18,7 +18,8 @@ const Header = () => {
       <div className={styles.icons}>
         <NavLink to="/cart">
           <div className={styles.cartIconContainer}>
-            <FontAwesomeIcon icon={faShoppingCart} className={styles.icon} />
+            <FontAwesomeIcon icon={faBagShopping} className={styles.carticon} />
+
             <h4 className={styles.cartCount}>{cartItems.cart.length}</h4>
           </div>
         </NavLink>

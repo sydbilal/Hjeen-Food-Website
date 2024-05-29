@@ -27,30 +27,47 @@
 
 .icon {
   margin-left: 20px;
-  font-size: 24px;
-  color: #928a8a;
+  font-size: 34px;
+  color: #000000;
+ cursor: pointer; 
+}
+.carticon{
+  font-size: 36px;
   cursor: pointer;
+  color: #000000;
+}
+
+.carticon:hover{
+  color: #5e5e5e
 }
 
 .icon:hover {
-  color: #252627; /* Color on hover */
+  color: #5a5a5a; /* Color on hover */
 }
 
 .cartIconContainer {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: inline-flex; /* Use inline-flex to allow horizontal alignment */
+  align-items: center; /* Align items vertically */
 }
 
 .cartCount {
   position: absolute;
-  top: -10px; 
-  right: -10px; 
-  background-color: rgb(46, 46, 46);
-  color: white;
+  top: 6px; /* Adjust the top position */
+  right: 3.5px; /* Adjust the right position */
+  /* background-color: rgb(46, 46, 46); */
+  color: rgb(255, 255, 255);
   border-radius: 50%;
-  padding: 4px 6px; 
-  font-size: 12px;
+  padding: 4px 6px;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex; /* Allow horizontal alignment */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+}
+.cartCount:hover{
+  color: rgb(236, 236, 236);
+
 }
 
 body {
