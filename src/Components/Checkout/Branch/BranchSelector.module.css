@@ -1,10 +1,9 @@
 .branchselector {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   padding-top: 20px;
-  width: 100%;
   max-width: 200vh;
   margin: 0 auto; 
 }
@@ -28,4 +27,15 @@
 .branchlist {
   width: 100%; 
   max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+  .branchselector {
+    margin: 10px; 
+    padding-top: 0px;
+    max-width: 200vh;
+    
+
+
+  }
 }

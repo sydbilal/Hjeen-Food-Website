@@ -12,6 +12,10 @@
     .Hotdrinks {
       flex-direction: column; 
       align-items: center; 
-      padding-right: 100px;
+      justify-content: center;
+      /* padding-right: 600px; */
+      overflow: hidden;
+      padding-left: 0;
+
     }
   }

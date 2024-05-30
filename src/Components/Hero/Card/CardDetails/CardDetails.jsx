@@ -69,6 +69,7 @@ const CardDetails = ({ product, isOpen, onClose }) => {
             <Box display="flex" justifyContent="center">
               <Image
                 w="250px"
+                h="250px"
                 src={product.imgsrc}
                 alt={product.imgalt}
                 borderRadius="lg"

@@ -32,7 +32,7 @@ const PaymentSection = () => {
           <>
             <div className={styles.Subtotal}>
               <h3>Subtotal</h3>
-              <h3>SAR {totalAmount}</h3>
+              <h3 className={styles.subtotaltext}>SAR {totalAmount}</h3>
             </div>
             <div className={styles.Totalvat}>
               <h3>Total VAT</h3>

@@ -19,7 +19,7 @@ const Dropdown = () => {
     return (
       <div>
         <label>
-          PhoneNumber:
+          Phone-Number:
           <PhoneInput 
             country={"sa"}
             value={phoneNumber}

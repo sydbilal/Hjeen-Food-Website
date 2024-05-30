@@ -11,7 +11,9 @@ const Hero = () => {
       <h2 className={styles.welcometext}>Welcome to Hjeen 👋</h2>
       <div className={styles.Headings}>
         <h1>Coffee of the Day</h1>
+        <div className={styles.coffeofthday}>
         <Coffeeofday/>
+        </div>
         <h1>Hot Drinks</h1>
         <HotDrinks/>
         <h1>Iced Drinks</h1>

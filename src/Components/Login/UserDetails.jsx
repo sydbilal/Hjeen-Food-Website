@@ -9,7 +9,7 @@ const UserDetails = ({ isOpen, onClose }) => {
         <ModalHeader>Login</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <Text>Please enter mobile number to receive SMS OTP</Text>
+          <Text>Enter mobile number to receive OTP</Text>
           <Dropdown />
           <Text>Example: 501234567</Text>
         </ModalBody>
