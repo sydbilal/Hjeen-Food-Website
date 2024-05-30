@@ -6,7 +6,8 @@
     max-width: 200vh; 
     max-height: 200vh; 
     overflow-y: auto; 
-    margin: 0 auto; 
+    margin: 10px;
+    margin: auto;
 }
 
 .item {

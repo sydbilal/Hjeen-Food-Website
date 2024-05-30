@@ -49,7 +49,6 @@
     color: rgb(0, 0, 0, 0.7);
 
 
-
   }
 
   .item{
@@ -92,8 +91,7 @@
       left: 50px; 
       padding-left: 50px;
       padding-top: 30px;
-      padding-bottom: 5px;
-  
+      top: 10px;
     }
 
     .item{
