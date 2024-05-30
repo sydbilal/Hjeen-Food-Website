@@ -15,7 +15,7 @@
 
 .logo img {
   margin-top: 10px;
-  height: 35px; 
+  height: 45px; 
   padding-left: 20px;
 }
 
@@ -54,7 +54,7 @@
 .cartCount {
   position: absolute;
   top: 6px; /* Adjust the top position */
-  right: 3.5px; /* Adjust the right position */
+  right: 4px; /* Adjust the right position */
   /* background-color: rgb(46, 46, 46); */
   color: rgb(255, 255, 255);
   border-radius: 50%;

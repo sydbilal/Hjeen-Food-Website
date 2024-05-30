@@ -61,7 +61,7 @@ const CardDetails = ({ product, isOpen, onClose }) => {
       isCentered
     >
       <ModalOverlay />
-      <ModalContent bg="rgba(255, 255, 255, 0.9)">
+      <ModalContent borderRadius="20px" bg="rgba(255, 255, 255)">
         <ModalHeader></ModalHeader>
         <ModalCloseButton />
         <ModalBody>
@@ -72,7 +72,7 @@ const CardDetails = ({ product, isOpen, onClose }) => {
                 h="250px"
                 src={product.imgsrc}
                 alt={product.imgalt}
-                borderRadius="lg"
+                borderRadius="20px"
               />
             </Box>
           )}
@@ -87,20 +87,20 @@ const CardDetails = ({ product, isOpen, onClose }) => {
         </ModalBody>
         <ModalFooter justifyContent="center">
           {!item || item.quantity === 0 ? (
-            <Button colorScheme="blue" mr={3} onClick={handleAddToCart}>
+            <Button borderRadius="10px" colorScheme="blue" mr={3} onClick={handleAddToCart}>
               + Add to cart
             </Button>
           ) : (
             <Box display="flex" alignItems="center">
               <Button
-                colorScheme="blue"
+                colorScheme="blue" borderRadius="15px"
                 onClick={() => handleDecreaseQuantity(item.id, item.quantity)}
               >
                 -
               </Button>
               <Text mx={2}>{item.qt}</Text>
               <Button
-                colorScheme="blue"
+                colorScheme="blue" borderRadius="15px"
                 onClick={() => handleIncreaseQuantity(item.id)}
               >
                 +

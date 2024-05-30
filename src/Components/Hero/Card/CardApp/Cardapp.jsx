@@ -34,7 +34,7 @@ const Cardapp = ({ cards }) => {
             onClick={() => handleCardClick(card)}
             cursor="pointer"
             bgColor={"white"}
-            borderRadius="30px"
+            borderRadius="20px"
           >
             <CardBody className={styles.cardBody}>
               <div className={styles.cardImageContainer}>

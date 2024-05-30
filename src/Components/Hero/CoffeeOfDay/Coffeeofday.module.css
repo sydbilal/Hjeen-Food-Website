@@ -7,6 +7,12 @@
     padding: 20px; 
     padding-left: 100px;
   }
+
+  .hellocoffef .card-container {
+    width: calc(50% - 20px); /* Set width for each card container */
+    margin-right: 20px; /* Add margin between cards */
+    margin-bottom: 20px; /* Add margin at the bottom of each card container */
+  }
   
   @media (max-width: 768px) {
     .hellocoffef {
@@ -18,5 +24,10 @@
 
 
       /* padding-right: 400px; */
+    }
+    .hellocoffef .card-container {
+      width: 100%; /* Full width for cards on small screens */
+      margin-right: 0; /* Remove right margin on small screens */
+      
     }
   }

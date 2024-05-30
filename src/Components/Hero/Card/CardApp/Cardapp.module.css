@@ -8,6 +8,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 60px; 
+  
 }
 
 .cardBody {
@@ -23,6 +24,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
 }
 
 .cardImage {
@@ -33,6 +35,23 @@
 
 .cardContent {
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
   
 }
+/* 
+@media (max-width: 768px) {
+
+  .cards {
+    margin-right: 0; 
+    width: calc(50% - 20px); 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    display: flex;
+  }
+  .cardImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+    width: 120px;
+  }
+} */

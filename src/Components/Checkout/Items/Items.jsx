@@ -21,20 +21,23 @@ const Items = () => {
   };
 
   const { cart } = useSelector((state) => state.cart);
+  if (cart.length === 0) {
+    return <div className={styles.emptyCart}>The cart is empty</div>;
+  }
 
   return (
     <div className={styles.wrapperitems}>
       {cart.map((item, index) => (
         <div key={index} className={styles.item}>
           <div className={styles.imageandtitle}>
-          <div className={styles.cartimage}>
-            <img
-              src={item.imgsrc}
-              alt={item.imgalt}
-              className={styles.itemImage}
-            />
-          </div>
-          <div className={styles.itemTitle}>{item.title}</div>
+            <div className={styles.cartimage}>
+              <img
+                src={item.imgsrc}
+                alt={item.imgalt}
+                className={styles.itemImage}
+              />
+            </div>
+            <div className={styles.itemTitle}>{item.title}</div>
           </div>
           <div className={styles.itemDetails}>
             <div className={styles.quantitypricecontrol}>

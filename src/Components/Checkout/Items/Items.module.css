@@ -17,7 +17,7 @@
     align-items: center;
     padding: 10px 0; 
     border-bottom: 1px solid #e0e0e0; 
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .item:last-child {
@@ -32,7 +32,7 @@
 .itemImage {
     height: 100px;
     border-radius: 10px;
-    width: 100px; /* Set a fixed width for the cards */
+    width: 100px; 
 
 }
 .imageandtitle{
@@ -80,6 +80,15 @@
     justify-content: center;
     margin-bottom: 30px;
 }
+.emptyCart{
+    display: flex;
+  justify-content: left;
+  padding-left: 50px;
+  color: rgba(255, 196, 0, 0.900);
+  font-weight: 300;
+  /* align-items: center; */
+  height: 40px; 
+}
 
 @media (max-width: 768px) {
     .wrapperitems {
@@ -87,12 +96,18 @@
       align-items: center; 
       justify-content: center;
       overflow: hidden;
-      /* padding-left: 0; */
-      /* padding: 10px; */
       margin: 10px; 
+      margin-bottom: 90px;
+    }
 
-
-
-      /* padding-right: 400px; */
+    .emptyCart{
+      display: flex;
+      justify-content: center;
+      color: rgba(255, 196, 0, 0.884);
+      font-weight: 300;
+      margin-top: 15px;
+      /* align-items: center; */
+      height: 120px; 
+      padding: 0;
     }
   }
