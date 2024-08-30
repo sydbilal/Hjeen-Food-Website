@@ -1,20 +1,39 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import styles from "./Iceddrinks.module.css"
 import Cardapp from "../Card/CardApp/Cardapp"
 
 const IcedDrinks = () => {
-  const cards = [
-    { id: 12, imgsrc: '/images/coffee1.jpg', imgalt: 'Image 1', title: 'Cold Brew ', price: '10' },
-    { id: 13, imgsrc: '/images/coffee1.jpg', imgalt: 'Image 2', title: 'Iced Coffee ', price: '20' },
-    { id: 14, imgsrc: '/images/coffee1.jpg', imgalt: 'Image 3', title: 'Ice Tea ', price: '9' },
-  ];
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://fakestoreapi.com/products/");
+        const allProducts = response.data;
+        const limitedProducts = allProducts.slice(4, ); 
+        const formattedCards = limitedProducts.map(product => ({
+          id: product.id,
+          imgsrc: product.image,
+          imgalt: product.title,
+          title: product.title,
+          description: product.description,
+          price: product.price.toString(),
+        }));
+        setCards(formattedCards);
+      } catch (error) {
+        console.error("Error fetching data: ", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   return (
-    
     <div className={styles.iceddrinks}>
-              <Cardapp cards={cards}/>
-
+      {cards.length > 0 ? <Cardapp cards={cards} /> : <p>Loading...</p>}
     </div>
-  )
-}
+  );
+};
 
 export default IcedDrinks
